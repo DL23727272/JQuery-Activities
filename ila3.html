@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        #animate {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">ILA 3 on JQuery</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <button id="increaseHW" class="btn btn-primary">Increase BOX</button>
+                <button id="decreaseHW" class="btn btn-primary">Decrease BOX</button>
+                <div class="py-5 d-flex justify-content-center"> 
+                    <div id="animate"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#increaseHW').click(function() {
+                $('#animate').animate({
+                    width: '+=50px', 
+                    height: '+=50px' 
+                }, 'slow'); 
+            });
+            $('#decreaseHW').click(function() {
+                $('#animate').animate({
+                    width: '-=50px', 
+                    height: '-=50px' 
+                }, 'slow'); 
+            });
+        });
+    </script>
+</body>
+</html>
