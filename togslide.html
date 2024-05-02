@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Effects - Tog Sliding </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        button{
+            margin: 3px; 
+            width: 125px;
+            cursor: pointer;
+        }
+        #box{
+            margin-bottom: 3px;
+            padding: 12px;
+            height: 100px;
+            width: 100px;
+            background-color: #9c9cff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Exercise 7 on JQuery Effects</h1>
+
+        <div class="text-center">
+            <p>click on btn</p>
+            <div id="box" class="container">Box</div>
+            <button id="btn" class="btn btn-primary">Click me</button>
+          
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function(){
+            $('#btn').click(function(){
+                $('#box').slideToggle(1000);
+            });
+        });
+    </script>
+    
+</body>
+</html>

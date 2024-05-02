@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Effects - Toggle Elements</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        button{
+            margin: 3px; 
+            width: 125px;
+            cursor: pointer;
+        }
+        #box{
+            margin: 3px;
+            padding: 12px;
+            height: 100px;
+            width: 100px;
+            background-color: #9c9cff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center">
+            <h1 class="text-center">Exercise 3 on JQuery Effects</h1>
+            <p class="text-center">Click on toggle box</p>
+            <div class="d-flex justify-content-center"> 
+                <div id="box">Box</div>
+            </div>
+            <button id="button" class="btn btn-primary">Toggle Box</button>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('#button').click(function(){
+                $('#box').toggle(1000);
+            });
+        });
+    </script>
+    
+</body>
+</html>

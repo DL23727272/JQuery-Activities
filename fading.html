@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Effects - Fading Elements</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        button{
+            cursor: pointer;
+        }
+        #box{
+            margin-bottom: 5px;
+            padding: 12px;
+            height: 100px;
+            width: 150px;
+            background-color: #9c9cff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercise 4 on JQuery Effects</h1>
+
+    <p>click on toggle box</p>
+    <div id="box">Box</div>
+    <button id="hide">Fade out Bpx</button>
+    <button id="show">Fade in box </button>
+
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                $('#box').fadeOut(1000);
+            });
+            $('#show').click(function(){
+                $('#box').fadeIn(1000);
+            });
+        });
+    </script>
+    
+</body>
+</html>
