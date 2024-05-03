@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Effects</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .square {
+            margin: 10px;
+            padding: 12px;
+            border: 2px solid #666;
+            width: 60px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+       
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="row">
+            <h2 class="text-center mx-auto">Exercise 1 on JQuery Effects</h2>
+            <div class="col-md-12 text-center">
+                <p>Click on any of the squares to see the result</p>
+                <div class="d-flex justify-content-center">
+                    <div class="square">Hide Me</div>
+                    <div class="square">Hide Me</div>
+                    <div class="square">Hide Me</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $(document).ready(function() {
+            $(".square").click(function() {
+                $(this).hide(1000);
+            });
+        });
+    </script>
+</body>
+</html>

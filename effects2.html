@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Effects</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        button { 
+            cursor: pointer; 
+        }
+        #box { 
+            margin-bottom: 5px;
+            padding: 12px;
+            height: 100px;
+            width: 125px; 
+            background-color: #9c9cff; }
+    </style>
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="row">
+            <h2 class="text-center mx-auto">Exercise 2 on JQuery Effects</h2>
+            <div class="col-md-12 text-center">
+                <p>Click on Show and Hide buttons to see the result:</p>
+                <div id="box" class="mx-auto">Sample box</div>
+                <button id="hide" class="btn btn-primary">Hide Box</button>
+                <button id="show" class="btn btn-primary">Show Box</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#show").click(function() {
+                $("#box").show(1000);
+            });
+            $("#hide").click(function() {
+                $("#box").hide(5000);
+            });
+        });
+    </script>
+</body>
+</html>
